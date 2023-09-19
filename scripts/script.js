@@ -20,9 +20,10 @@ export function translate(phrase) {
   }
 }
 
-const error = (message) => {
+export const error = (message) => {
   result.classList.add("danger");
   result.textContent = message;
+  form.value = "";
 };
 
 englishFormBtn.addEventListener("click", (e) => {
@@ -32,5 +33,3 @@ englishFormBtn.addEventListener("click", (e) => {
   result.textContent = translate(form.value);
   form.value = "";
 });
-
-// phrase.test(/[a-zA-z]/g)
