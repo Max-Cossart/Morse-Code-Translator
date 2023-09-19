@@ -4,20 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morse Code Translator</title>
-    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer type="module" src="./scripts/script.js"></script>
   </head>
   <body>
-    <h1>Morse Code Translator</h1>
-    <form action="">
-      <h2>English</h2>
-      <input id="englishForm" type="textarea" />
-      <button id="englishFormBtn">Submit</button>
-    </form>
-    <form action="">
-      <h2>Morse Code</h2>
-      <input id="morseCodeForm" placeholder="" type="textarea" />
-      <button id="morseCodeFormBtn">Submit</button>
-    </form>
-    <div><span id="result"></span></div>
+    <main>
+      <h1>Morse Code Translator</h1>
+      <section class="form-container">
+        <form class="form" action="">
+          <textarea
+            class="form__input"
+            placeholder="Type English or Morse Code here!"
+            id="inputField"
+            name=""
+            id=""
+            cols="42"
+            rows="6"
+          ></textarea>
+          <button form="form__btn" id="englishFormBtn">Translate</button>
+        </form>
+      </section>
+      <div id="resultContainer">
+        <h2>Translates To:</h2>
+        <p class="" id="result"></p>
+      </div>
+    </main>
   </body>
 </html>

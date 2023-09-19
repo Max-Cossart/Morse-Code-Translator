@@ -1,5 +1,3 @@
-@use "./partials/palette.scss" as p;
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +6,7 @@
 }
 
 body {
-  background-color: p.$secondary-color;
+  background-color: #526d82;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +14,7 @@ body {
 }
 
 main {
-  background-color: p.$primary-color;
+  background-color: #27374d;
   width: 700px;
   height: 500px;
   border-radius: 16px;
@@ -25,12 +23,12 @@ main {
 
 h1 {
   margin: 12px;
-  color: p.$four-color;
+  color: #dde6ed;
 }
 
 h2 {
   margin: 12px;
-  color: p.$four-color;
+  color: #dde6ed;
 }
 
 textarea {
@@ -38,27 +36,25 @@ textarea {
   max-height: 140px;
   margin-top: 32px;
   font-size: 18px;
-  color: p.$primary-color;
-  background-color: p.$three-color;
+  color: #27374d;
+  background-color: #9db2bf;
   border-radius: 16px;
   padding: 8px;
   transition: ease all 300ms;
   border: 2px solid;
-
-  &::placeholder {
-    color: p.$four-color;
-  }
-
-  &:focus {
-    outline: none;
-    border: 2px solid p.$four-color;
-  }
+}
+textarea::placeholder {
+  color: #dde6ed;
+}
+textarea:focus {
+  outline: none;
+  border: 2px solid #dde6ed;
 }
 
 button {
-  background-color: p.$secondary-color;
+  background-color: #526d82;
   border: none;
-  color: p.$primary-color;
+  color: #27374d;
   font-size: 20px;
   font-weight: bold;
   margin: 24px;
@@ -66,19 +62,17 @@ button {
   height: 40px;
   border-radius: 16px;
   transition: ease all 300ms;
-
-  &:hover {
-    cursor: pointer;
-    background-color: p.$four-color;
-  }
-
-  &:active {
-    transform: scale(0.9);
-  }
+}
+button:hover {
+  cursor: pointer;
+  background-color: #dde6ed;
+}
+button:active {
+  transform: scale(0.9);
 }
 
 p {
-  color: p.$four-color;
+  color: #dde6ed;
   font-size: 18px;
   max-width: 500px;
   margin: 0 auto;
