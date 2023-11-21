@@ -1,0 +1,107 @@
+@use "./partials/palette.scss" as p;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: p.$secondary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  background-color: p.$primary-color;
+  width: 700px;
+  height: 500px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+h1 {
+  margin: 12px;
+  color: p.$four-color;
+}
+
+h2 {
+  margin: 12px;
+  color: p.$four-color;
+}
+
+textarea {
+  max-width: 480px;
+  max-height: 140px;
+  margin-top: 32px;
+  font-size: 18px;
+  color: p.$primary-color;
+  background-color: p.$three-color;
+  border-radius: 16px;
+  padding: 8px;
+  transition: ease all 300ms;
+  border: 2px solid;
+
+  &::placeholder {
+    color: p.$four-color;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid p.$four-color;
+  }
+}
+
+button {
+  background-color: p.$secondary-color;
+  border: none;
+  color: p.$primary-color;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 24px;
+  width: 250px;
+  height: 40px;
+  border-radius: 16px;
+  transition: ease all 300ms;
+
+  &:hover {
+    cursor: pointer;
+    background-color: p.$four-color;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+p {
+  color: p.$four-color;
+  font-size: 18px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.danger {
+  padding: 16px;
+  background-color: rgb(238, 140, 140);
+  color: red;
+  font-weight: bold;
+  border: 1px solid red;
+  border-radius: 16px;
+}
